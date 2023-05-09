@@ -1,0 +1,123 @@
+.gameContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Start Screen */
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.logo {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.playerName {
+    margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#start {
+    width: 100px;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+
+/* Game Time */
+
+.gameTime {
+    justify-content: space-around;
+    display: grid;
+    background-color: lightgoldenrodyellow;
+    gap: 5px;
+    grid-template-areas:
+        'player1 player1  player1'
+        'player4 tableMiddle  player2'
+        'player3 player3  player3';
+}
+
+.player {
+    width: 400px;
+    height: 150px;
+    margin: auto;
+}
+
+#player1 {
+    grid-area: player1;
+    transform: rotate(180deg);
+}
+
+#player2 {
+    grid-area: player2;
+    transform: rotate(-90deg);
+}
+
+.tableMiddle {
+    grid-area: tableMiddle;
+}
+
+#player4 {
+    grid-area: player4;
+    transform: rotate(90deg);
+}
+
+#player3 {
+    grid-area: player3;
+}
+
+
+.gameTime>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.tableMiddle {
+    margin: auto;
+    display: flex;
+}
+
+.drawCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cardDeck {
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+#discardedCard {
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/uno.js"></script>
+    <title>UNO Game</title>
+</head>
+
+<body>
+    <div id="gameContainer">
+        <div class="start">
+            <div class="logo">
+                <img src="assets/img/UNO_Logo.svg" alt="">
+            </div>
+            <div class="playerName">
+                Player Name:
+                <input id="pName" type="text">
+            </div>
+            <button id="startBtn">Start</button>
+        </div>
+
+        <div class="gameTime">
+
+            <div id="player1" class="player">
+                <h3 class="name1">Player 1</h3>
+                <ul id="player1Hand" class="playerHand">
+                    <!-- 
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li> 
+                    -->
+                </ul>
+            </div>
+            <div id="player2" class="player">
+                <h3 class="name2">Player 2</h3>
+                <ul id="player2Hand" class="playerHand"></ul>
+            </div>
+            <div id="player3" class="player">
+                <h3 class="name3">Player 3</h3>
+                <ul id="player3Hand" class="playerHand"></ul>
+            </div>
+            <div id="player4" class="player">
+                <h3 class="name4">Player 4</h3>
+                <ul id="player4Hand" class="playerHand"></ul>
+            </div>
+
+            <div class="tableMiddle">
+                <div class="drawCard">
+                    <div id="cardDeck">
+                        <!-- <ul id="deck"> </ul> -->
+                    </div>
+                    <h4>Draw Card</h4>
+                </div>
+                <div id="discardedCard">
+                    <!-- <ul id="topCard"></ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
